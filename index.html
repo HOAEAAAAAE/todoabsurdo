@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0ff, #00f, #ffd700);
+      background-size: 600% 600%;
+      animation: bgshift 10s ease infinite;
+      font-family: 'Impact', sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 20vh;
+    }
+    h1 {
+      font-size: 5em;
+      text-shadow: 0 0 10px #000;
+    }
+    button {
+      font-size: 1.5em;
+      padding: 1em 2em;
+      background: gold;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #fff;
+    }
+    button:hover {
+      background: crimson;
+      color: yellow;
+    }
+    @keyframes bgshift {
+      0% {background-position: 0 0;}
+      50% {background-position: 100% 100%;}
+      100% {background-position: 0 0;}
+    }
+  </style>
+</head>
+<body>
+  <h1>Esto es TODO.</h1>
+  <button onclick="despertar()">Despertar ahora</button>
+  <script>
+    function despertar() {
+      alert("Ya estabas despierto. Solo olvidaste.");
+      document.body.style.filter = "invert(1)";
+    }
+  </script>
+<p style="margin-top: 5em;"><a href="https://ai2-heeleep-o.neocities.org" target="_blank" style="color: #fff; text-decoration: underline;">Ir al espejo: AI²-HEELEEP O(§)</a></p></body>
+</html>
